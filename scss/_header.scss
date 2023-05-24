@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    font-family: Montserrat;
+}
+.header__container {
+}
+.header__nav {
+}
+.nav {
+    &__block {
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        font-size: 24px;
+        color: inherit;
+        font-weight: 600;
+        border: 2px solid #19c3e0;
+        padding: 10px;
+        border-radius: 50%;
+        transition: all ease 0.3s;
+        &:hover {
+            color: #19c3e0;
+        }
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 0 1 500px;
+    }
+    &__item {
+    }
+    .item {
+        &__link {
+            color: inherit;
+            font-size: 20px;
+            font-weight: 500;
+            transition: all ease 0.3s;
+            &:hover {
+                color: #19c3e0;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.about-page {
+    font-family: Montserrat;
+    &__container {
+    }
+    &__title {
+        position: relative;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 500;
+        margin: 100px 0 40px 0;
+        padding-bottom: 5px;
+        &::before {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            width: 120px;
+            height: 2px;
+            background-color: #fff;
+            opacity: 0.5;
+        }
+    }
+    .block-about_page {
+        &__items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+            column-gap: 15px;
+            row-gap: 15px;
+            flex-wrap: wrap;
+            .item-block-about_page {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                row-gap: 10px;
+                border: 1px solid #fff;
+                border-radius: 15px;
+                padding: 20px;
+                flex: 0 1 300px;
+                &__title {
+                    font-size: 24px;
+                }
+                &__icon {
+                }
+                &__text {
+                }
+            }
+        }
+    }
+}
