@@ -1,0 +1,46 @@
+//<Адаптивное свойство>=======================================================
+$maxWidth: 1920; //Максимальная ширина видимости всего шаблона
+$maxWidthContainer: 1170; //Ширина ограничивающего контейнера
+
+@mixin adativ-value($property, $startSize, $minSize, $type) {
+    $addSize: $startSize - $minSize; // 50 - 20 = 30
+    @if $type==1 {
+        //Только если меньше контейнера
+        #{$property}: $startSize + px; // 50px
+        @media (max-width: #{$maxWidthContainer + px}) {
+            // 1170px
+            #{$property}: calc(
+                #{$minSize + px} + #{$addSize} *
+                    ((100vw - 320px) / #{$maxWidthContainer - 320})
+            ); // padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1170 - 320)))
+        }
+    } @else if $type==2 {
+        //Только если больше контейнера
+        #{$property}: $startSize + px;
+        @media (min-width: #{$maxWidthContainer +px}) {
+            #{$property}: calc(
+                #{$minSize + px} + #{$addSize} *
+                    ((100vw - 320px) / #{$maxWidth - 320})
+            ); // padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)))
+        }
+    } @else {
+        //Всегда
+        #{$property}: calc(
+            #{$minSize +
+                px} +
+                #{$addSize} *
+                ((100vw - 320px) / #{$maxWidth - 320})
+        ); // padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)))
+    }
+}
+//<Добавление миксина в scss-файл>=======================================================
+/*.block__body{
+    @include adativ-value('свойство(padding)', изначальное значение по макету (50), конечное значение (20), тип (0, 1, 2));
+    0 - всегда будет работать,
+    1 - меньше контейнера,
+    2 - больше контейнера.
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)))
+}*/
+//<Добавление миксина в scss-файл>=======================================================
+
+//<Адаптивное свойство>=======================================================

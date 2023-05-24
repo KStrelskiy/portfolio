@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <title>Cards</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--data-one-spoller указывает будет ли скрыт другой спойлер-->
+            <div data-spollers data-one-spoller class="block block_1">
+                <!--data-one-spoller указывает будет ли скрыт другой спойлер-->
+                <div class="block__item">
+                    <button
+                        type="button"
+                        data-spoller
+                        class="block__title"
+                        tabindex="-1"
+                    >
+                        Спойлер №1
+                    </button>
+                    <div class="block__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Commodi modi ullam eligendi porro neque natus
+                        autem pariatur beatae consequatur corporis itaque nobis
+                        esse dolorem illo soluta laborum, eos fuga est.
+                    </div>
+                </div>
+                <div class="block__item">
+                    <button
+                        type="button"
+                        data-spoller
+                        class="block__title"
+                        tabindex="-1"
+                    >
+                        Спойлер №2
+                    </button>
+                    <div class="block__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Obcaecati natus omnis voluptatem provident tempora nemo
+                        adipisci, iste ab cupiditate cumque in quod temporibus
+                        quisquam odit illo est inventore. Quasi, inventore?
+                    </div>
+                </div>
+            </div>
+            <!--data-spollers="указываем размеры(size,max/min)"-->
+            <div data-spollers="650,min" class="block block_1">
+                <!--data-spollers="указываем размеры(size,max/min)"-->
+                <div class="block__item">
+                    <button
+                        type="button"
+                        data-spoller
+                        class="block__title"
+                        tabindex="-1"
+                    >
+                        Спойлер №3
+                    </button>
+                    <div class="block__text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Rem, impedit et blanditiis cum ipsum consequatur
+                        iusto alias consequuntur, aliquid amet illum soluta in
+                        illo optio mollitia officia est dolor ipsam?
+                    </div>
+                </div>
+            </div>
+            <!--data-spollers="указываем размеры(size,max/min)"-->
+            <div data-spollers="850,max" class="block block_1">
+                <!--data-spollers="указываем размеры(size,max/min)"-->
+                <div class="block__item">
+                    <button
+                        type="button"
+                        data-spoller
+                        class="block__title"
+                        tabindex="-1"
+                    >
+                        Спойлер №4
+                    </button>
+                    <div class="block__text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Rem, impedit et blanditiis cum ipsum consequatur
+                        iusto alias consequuntur, aliquid amet illum soluta in
+                        illo optio mollitia officia est dolor ipsam?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/spollers.js"></script>
+    </body>
+</html>
