@@ -1,36 +1,36 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
-  src: url(.../#src/font/#src/font/Montserrat-Regular.eot);
-  src: url(../#src/font/Montserrat-Regular.eot?#iefix) format("embedded-opentype"), url(../#src/font/Montserrat-Regular.otf) format("otf"), url(../#src/font/Montserrat-Regular.svg#Montserrat-Regular) format("svg"), url(../#src/font/Montserrat-Regular.ttf) format("truetype"), url(../#src/font/Montserrat-Regular.woff) format("woff"), url(../#src/font/Montserrat-Regular.woff2) format("woff2");
+  src: url("/fonts/fontFamily/Montserrat-Regular.eot");
+  src: url("/fonts/fontFamily/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/fontFamily/Montserrat-Regular.woff2") format("woff2"), url("/fonts/fontFamily/Montserrat-Regular.woff") format("woff"), url("/fonts/fontFamily/Montserrat-Regular.ttf") format("truetype"), url("/fonts/fontFamily/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(../#src/font/Montserrat-Medium.eot);
-  src: url(../#src/font/Montserrat-Medium.eot?#iefix) format("embedded-opentype"), url(../#src/font/Montserrat-Medium.otf) format("otf"), url(../#src/font/Montserrat-Medium.svg#Montserrat-Medium) format("svg"), url(../#src/font/Montserrat-Medium.ttf) format("truetype"), url(../#src/font/Montserrat-Medium.woff) format("woff"), url(../#src/font/Montserrat-Medium.woff2) format("woff2");
+  src: url(/fonts/fontFamily/Montserrat-Medium.eot);
+  src: url(/fonts/fontFamily/Montserrat-Medium.eot?#iefix) format("embedded-opentype"), url(/fonts/fontFamily/Montserrat-Medium.otf) format("otf"), url(/fonts/fontFamily/Montserrat-Medium.svg#Montserrat-Medium) format("svg"), url(/fonts/fontFamily/Montserrat-Medium.ttf) format("truetype"), url(/fonts/fontFamily/Montserrat-Medium.woff) format("woff"), url(/fonts/fontFamily/Montserrat-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(../#src/font/Montserrat-SemiBold.eot);
-  src: url(../#src/font/Montserrat-SemiBold.eot?#iefix) format("embedded-opentype"), url(../#src/font/Montserrat-SemiBold.otf) format("otf"), url(../#src/font/Montserrat-SemiBold.svg#Montserrat-SemiBold) format("svg"), url(../#src/font/Montserrat-SemiBold.ttf) format("truetype"), url(../#src/font/Montserrat-SemiBold.woff) format("woff"), url(../#src/font/Montserrat-SemiBold.woff2) format("woff2");
+  src: url(/fonts/fontFamily/Montserrat-SemiBold.eot);
+  src: url(/fonts/fontFamily/Montserrat-SemiBold.eot?#iefix) format("embedded-opentype"), url(/fonts/fontFamily/Montserrat-SemiBold.otf) format("otf"), url(/fonts/fontFamily/Montserrat-SemiBold.svg#Montserrat-SemiBold) format("svg"), url(/fonts/fontFamily/Montserrat-SemiBold.ttf) format("truetype"), url(/fonts/fontFamily/Montserrat-SemiBold.woff) format("woff"), url(/fonts/fontFamily/Montserrat-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(../#src/font/Montserrat-Bold.eot);
-  src: url(../#src/font/Montserrat-Bold.eot?#iefix) format("embedded-opentype"), url(../#src/font/Montserrat-Bold.otf) format("otf"), url(../#src/font/Montserrat-Bold.svg#Montserrat-Bold) format("svg"), url(../#src/font/Montserrat-Bold.ttf) format("truetype"), url(../#src/font/Montserrat-Bold.woff) format("woff"), url(../#src/font/Montserrat-Bold.woff2) format("woff2");
+  src: url(/fonts/fontFamily/Montserrat-Bold.eot);
+  src: url(/fonts/fontFamily/Montserrat-Bold.eot?#iefix) format("embedded-opentype"), url(/fonts/fontFamily/Montserrat-Bold.otf) format("otf"), url(/fonts/fontFamily/Montserrat-Bold.svg#Montserrat-Bold) format("svg"), url(/fonts/fontFamily/Montserrat-Bold.ttf) format("truetype"), url(/fonts/fontFamily/Montserrat-Bold.woff) format("woff"), url(/fonts/fontFamily/Montserrat-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat-ExtraBold";
-  src: url(../#src/font/Montserrat-ExtraBold.eot);
-  src: url(../#src/font/Montserrat-ExtraBold.eot?#iefix) format("embedded-opentype"), url(../#src/font/Montserrat-ExtraBold.otf) format("otf"), url(../#src/font/Montserrat-ExtraBold.svg#Montserrat-ExtraBold) format("svg"), url(../#src/font/Montserrat-ExtraBold.woff) format("woff"), url(../#src/font/Montserrat-ExtraBold.woff2) format("woff2"), url(../#src/font/Montserrat-ExtraBold.ttf) format("truetype");
+  src: url(/fonts/fontFamily/Montserrat-ExtraBold.eot);
+  src: url(/fonts/fontFamily/Montserrat-ExtraBold.eot?#iefix) format("embedded-opentype"), url(/fonts/fontFamily/Montserrat-ExtraBold.otf) format("otf"), url(/fonts/fontFamily/Montserrat-ExtraBold.svg#Montserrat-ExtraBold) format("svg"), url(/fonts/fontFamily/Montserrat-ExtraBold.woff) format("woff"), url(/fonts/fontFamily/Montserrat-ExtraBold.woff2) format("woff2"), url(/fonts/fontFamily/Montserrat-ExtraBold.ttf) format("truetype");
   font-weight: 800;
   font-style: normal;
 }
@@ -131,8 +131,8 @@ h6 {
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 body {
-  color: #ffffff;
-  background-color: #1a233b;
+  color: #000000;
+  background-color: #fdfdfd;
   font-size: 16px;
 }
 
@@ -152,6 +152,24 @@ body {
 .header {
   width: 100%;
   font-family: Montserrat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header::before {
+  content: "";
+  background-color: #ffffff;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__container {
+  position: relative;
+  z-index: 2;
 }
 
 .nav__block {
@@ -164,13 +182,13 @@ body {
   font-size: 24px;
   color: inherit;
   font-weight: 600;
-  border: 2px solid #19c3e0;
+  border: 2px solid #93c;
   padding: 10px;
   border-radius: 50%;
   transition: all ease 0.3s;
 }
 .nav__logo:hover {
-  color: #19c3e0;
+  color: #93c;
 }
 .nav__items {
   display: flex;
@@ -185,165 +203,201 @@ body {
   transition: all ease 0.3s;
 }
 .nav .item__link:hover {
-  color: #19c3e0;
+  color: #93c;
 }
 
 .page {
   height: 100%;
 }
 
-.page__home {
+.home {
   font-family: Montserrat;
-}
-
-.home-page {
   position: relative;
   height: 100%;
+  margin-top: 70px;
+  padding: 100px 0;
 }
-.home-page::after {
+.home::after {
   content: "";
-  background: linear-gradient(90deg, rgba(11, 24, 60, 0.868785014) 0%, rgb(21, 55, 97) 52%, rgb(19, 76, 102) 100%);
+  background-color: #f2f1ee;
   height: 100%;
   width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
 }
-.home-page__container {
+.home__container {
   position: relative;
   z-index: 2;
-  padding: 200px 0;
 }
-.home-page__block {
+.home .body-home {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  flex-wrap: wrap;
-}
-.home-page__logo {
-  height: 250px;
-  width: 250px;
-}
-.home-page__logo img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 4px 4px 15px 2px rgba(255, 255, 255, 0.2);
-}
-.home-page .body-home_page {
+  flex-direction: column;
   position: relative;
   overflow: hidden;
+  row-gap: 15px;
 }
-.home-page .body-home_page::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 25px;
-  width: 3px;
-  background-color: #071331;
-  animation-name: lineScale;
-  animation-direction: alternate;
-  animation-duration: 0.45s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+.home .body-home__subtitle {
+  font-size: 20px;
+  color: #93c;
+  font-weight: 500;
 }
-@keyframes lineScale {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.home-page .body-home_page__name {
-  margin-bottom: 10px;
-}
-.home-page .body-home_page__name span {
-  display: inline-block;
+.home .body-home__name {
   font-size: 60px;
-  font-weight: 800;
-  transition: color ease 0.2s;
-  cursor: default;
-  transition: all ease 0.3s;
+  font-weight: 600;
 }
-.home-page .body-home_page__name span:nth-child(11) {
-  margin-left: 20px;
-}
-.home-page .body-home_page__name span:hover {
-  color: #071331;
-  transform: scale(1.15);
-}
-.home-page .body-home_page__profession {
+.home .body-home__profession {
   position: relative;
   text-align: right;
   font-size: 30px;
-  font-weight: 700;
-  animation: textTransformSpan 4s steps(30, end) infinite alternate;
+  font-weight: 500;
 }
-.home-page .body-home_page__profession span {
-  position: absolute;
-  bottom: 0;
-  right: -350px;
-  color: #071331;
+.home .body-home__profession span {
+  color: #93c;
 }
-@keyframes textTransformSpan {
-  from {
-    right: 5px;
-  }
-  100% {
-    right: 370px;
-  }
+.home .body-home__text {
+  font-size: 20px;
+  max-width: 600px;
 }
 
-.about-page {
+.about {
   font-family: Montserrat;
+  padding: 100px 0;
+  text-align: left;
 }
-.about-page__title {
-  position: relative;
-  text-align: center;
-  font-size: 38px;
-  font-weight: 500;
-  margin: 100px 0 40px 0;
-  padding-bottom: 5px;
-}
-.about-page__title::before {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  content: "";
-  width: 120px;
-  height: 2px;
-  background-color: #fff;
-  opacity: 0.5;
-}
-.about-page .block-about_page__items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-  row-gap: 15px;
-  flex-wrap: wrap;
-}
-.about-page .block-about_page__items .item-block-about_page {
+.about .block-about {
   display: flex;
   align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.about .block-about__body {
+  display: flex;
   justify-content: center;
   flex-direction: column;
-  row-gap: 10px;
-  border: 1px solid #fff;
-  border-radius: 15px;
-  padding: 20px;
-  flex: 0 1 300px;
+  row-gap: 15px;
+  max-width: 650px;
 }
-.about-page .block-about_page__items .item-block-about_page__title {
-  font-size: 24px;
+.about .block-about__box {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: rgb(153, 51, 204);
+  transition: all ease-in-out 0.5s;
+}
+.about .block-about__box:hover {
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+.about .block-about__box::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  content: "";
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 2px solid rgb(153, 51, 204);
+  transition: all ease-in-out 0.5s;
+}
+.about .block-about__box:hover::before {
+  top: 25px;
+  left: 25px;
+}
+.about .block-about__text {
+  font-size: 16px;
+}
+.about .block-about__items {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 300px));
+  gap: 0px 10px;
+}
+.about .block-about__item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.about .block-about__item::before {
+  content: "▹";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  color: rgb(153, 51, 204);
+  line-height: 12px;
+}
+
+.experience {
+  padding: 100px 0;
+}
+.experience .block-experience__item {
+  display: flex;
+  align-items: flex-start;
+}
+.experience .block-experience__item:first-child {
+  margin-bottom: 20px;
+}
+.experience .block-experience__btn {
+  cursor: text;
+  position: relative;
+  font-size: 20px;
+  width: 150px;
+  font-weight: 500;
+  background-color: #fff;
+}
+.experience .block-experience__btn::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: rgb(153, 51, 204);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.experience .block-experience__item-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-left: 50px;
+  row-gap: 10px;
+}
+.experience .block-experience__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.experience .block-experience__block-title {
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.experience .block-experience__block-small_data {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.title-main {
+  display: flex;
+  align-items: center;
+  font-size: 38px;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+}
+.title-main::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: rgba(153, 51, 204, 0.6);
 }

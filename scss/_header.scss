@@ -1,8 +1,24 @@
 .header {
     width: 100%;
     font-family: Montserrat;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 50;
+    &::before {
+        content: "";
+        background-color: #ffffff;
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
+
 .header__container {
+    position: relative;
+    z-index: 2;
 }
 .header__nav {
 }
@@ -17,12 +33,12 @@
         font-size: 24px;
         color: inherit;
         font-weight: 600;
-        border: 2px solid #19c3e0;
+        border: 2px solid #93c;
         padding: 10px;
         border-radius: 50%;
         transition: all ease 0.3s;
         &:hover {
-            color: #19c3e0;
+            color: #93c;
         }
     }
     &__items {
@@ -40,7 +56,7 @@
             font-weight: 500;
             transition: all ease 0.3s;
             &:hover {
-                color: #19c3e0;
+                color: #93c;
             }
         }
     }

@@ -12,15 +12,12 @@
         <!--"initial-scale" – начальный масштаб страницы (Значение 1.0 определяет масштаб 1:1, т.е. «не масштабировать»)-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--Подключение стилей для шрифта-->
-        <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap"
-            rel="stylesheet"
-        />
+        <!--Подключение стилей для шрифта-->
         <!--Подключение файла style.css-->
         <link rel="stylesheet" href="css/style.css" />
         <!--Подключение библиотеки JavaScript-->
         <!--Название сайта-->
-        <title>Front-end developer Konstantsin Strelskiy</title>
+        <title>Konstantsin Strelskiy</title>
     </head>
     <!--Всё, что отобразиться на сайте-->
     <body>
@@ -29,13 +26,17 @@
                 <div class="header__container">
                     <div class="header__nav nav">
                         <nav class="nav__block">
-                            <a href="#" class="nav__logo">KS</a>
+                            <a href="#home" class="nav__logo">KS</a>
                             <ul class="nav__items">
                                 <li class="nav__item item">
-                                    <a href="#" class="item__link">Обо мне</a>
+                                    <a href="#about" class="item__link"
+                                        >Обо мне</a
+                                    >
                                 </li>
                                 <li class="nav__item item">
-                                    <a href="#" class="item__link">Опыт</a>
+                                    <a href="#experience" class="item__link"
+                                        >Опыт</a
+                                    >
                                 </li>
                                 <li class="nav__item item">
                                     <a href="#" class="item__link">Портфолио</a>
@@ -48,125 +49,165 @@
                     </div>
                 </div>
             </header>
-            <main class="page">
-                <section id="home" class="page__home home-page">
-                    <div class="home-page__container">
-                        <div class="home-page__block">
-                            <div class="home-page__logo">
-                                <img
-                                    src="/image//imageHome/myPhoto.png"
-                                    alt="KStrelskiy"
-                                />
+            <section id="home" class="home">
+                <div class="home__container">
+                    <div class="home__body body-home">
+                        <p class="body-home__subtitle">Привет, меня зовут</p>
+                        <h1 class="body-home__name">Константин Стрельский</h1>
+                        <p class="body-home__profession"></p>
+                        <p class="body-home__text">
+                            Я технический энтузиаст с опытом разработки
+                            веб-приложений. Я люблю исследовать новые
+                            технологии. Мне нравится вникать в требования
+                            проекта и очень эффективно дополнять их современными
+                            технологиями.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="about">
+                <div class="about__container">
+                    <h2 class="about__title title-main">Обо мне</h2>
+                    <div class="about__block block-about">
+                        <div class="block-about__body">
+                            <div class="block-about__text">
+                                Привет! Меня зовут Костя, и мне нравится
+                                создавать вещи, которые живут в Интернете. Мой
+                                интерес к веб—разработке начался еще в 2019
+                                году, когда я проходил создание веб—страниц в
+                                университете с использование HTML и CSS. На
+                                последнем курсе самостоятельно начал углубляться
+                                в разработку.
                             </div>
-                            <div class="home-page__body body-home_page">
-                                <h1 class="body-home_page__name">
-                                    <span>К</span>
-                                    <span>о</span>
-                                    <span>н</span>
-                                    <span>с</span>
-                                    <span>т</span>
-                                    <span>а</span>
-                                    <span>н</span>
-                                    <span>т</span>
-                                    <span>и</span>
-                                    <span>н</span>
-
-                                    <span>С</span>
-                                    <span>т</span>
-                                    <span>р</span>
-                                    <span>е</span>
-                                    <span>л</span>
-                                    <span>ь</span>
-                                    <span>с</span>
-                                    <span>к</span>
-                                    <span>и</span>
-                                    <span>й</span>
-                                </h1>
-                                <p class="body-home_page__profession">
-                                    I'm<span> Front-End Developer</span>
-                                </p>
+                            <div class="block-about__text">
+                                Вот несколько технологий, с которыми я недавно
+                                работал:
+                                <ul class="block-about__items">
+                                    <li class="block-about__item">HTML</li>
+                                    <li class="block-about__item">CSS</li>
+                                    <li class="block-about__item">Git</li>
+                                    <li class="block-about__item">
+                                        JavaScript (ES6+)
+                                    </li>
+                                    <li class="block-about__item">React</li>
+                                    <li class="block-about__item">Node.js</li>
+                                </ul>
                             </div>
                         </div>
+                        <div class="block-about__box"></div>
                     </div>
-                </section>
-                <section id="about" class="page__about about-page">
-                    <div class="about-page__container">
-                        <h2 class="about-page__title">Обо мне</h2>
-                        <div class="about-page__block block-about_page">
-                            <div class="block-about_page__items">
-                                <div
-                                    class="block-about_page__item item-block-about_page"
+                </div>
+            </section>
+            <section id="experience" class="experience">
+                <div class="experience__container">
+                    <h2 class="experience__title title-main">Опыт</h2>
+                    <div class="experience__block block-experience">
+                        <ul class="block-experience__items">
+                            <li class="block-experience__item">
+                                <button
+                                    class="block-experience__btn"
                                 >
-                                    <div class="item-block-about_page__title">
-                                        Немного о себе
+                                    Образование
+                                </button>
+                                <div class="block-experience__item-body">
+                                    <div class="block-experience__block">
+                                        <div
+                                            class="block-experience__block-title"
+                                        >
+                                            БЕЛОРУССКИЙ НАЦИОНАЛЬНЫЙ ТЕХНИЧЕСКИЙ
+                                            УНИВЕРСИТЕТ
+                                        </div>
+                                        <div
+                                            class="block-experience__block-small_data"
+                                        >
+                                            2016 - 21
+                                        </div>
+                                        <div
+                                            class="block-experience__block-text"
+                                        >
+                                            Инженер-строитель
+                                        </div>
                                     </div>
-                                    <div
-                                        class="item-block-about_page__icon"
-                                    ></div>
-                                    <div class="item-block-about_page__text">
-                                        Доброго времени суток,меня зовут Кулинич
-                                        Иван Я занимаюсь web-разработкой с
-                                        нуля,под ключ. Выполняю верстку и
-                                        программирование сайтов,а так же
-                                        доработку,добавляя полный функционал на
-                                        сайт!Верстаю адаптивную верстку с
-                                        помощью Bootstrap, таким образом сайт
-                                        получается красивым на любом
-                                        устройстве,будь то комьютер,ноутбук или
-                                        телефон!
+                                    <div class="block-experience__block">
+                                        <div
+                                            class="block-experience__block-title"
+                                        >
+                                            Самообразование
+                                        </div>
+                                        <div
+                                            class="block-experience__block-small_data"
+                                        >
+                                            2021 - 2023
+                                        </div>
+                                        <div
+                                            class="block-experience__block-text"
+                                        >
+                                            Front-end разработчик
+                                        </div>
+                                    </div>
+                                    <div class="block-experience__block">
+                                        <div
+                                            class="block-experience__block-title"
+                                        >
+                                            It курсы "OverOne"
+                                        </div>
+                                        <div
+                                            class="block-experience__block-small_data"
+                                        >
+                                            2023.02 - 04
+                                        </div>
+                                        <div
+                                            class="block-experience__block-text"
+                                        >
+                                            Front-end разработчик
+                                        </div>
                                     </div>
                                 </div>
-                                <div
-                                class="block-about_page__item item-block-about_page"
-                            >
-                                <div class="item-block-about_page__title">
-                                    Знания и Умения
+                            </li>
+                            <li class="block-experience__item">
+                                <button class="block-experience__btn">
+                                    Опыт работы
+                                </button>
+                                <div class="block-experience__item-body">
+                                    <div class="block-experience__block">
+                                        <div
+                                            class="block-experience__block-title"
+                                        >
+                                            ГПО "Горремавтодор Мингорисполкома"
+                                        </div>
+                                        <div
+                                            class="block-experience__block-small_data"
+                                        >
+                                            2021 - now
+                                        </div>
+                                        <div
+                                            class="block-experience__block-text"
+                                        >
+                                            Мастер
+                                        </div>
+                                    </div>
+                                    <div class="block-experience__block">
+                                        <div
+                                            class="block-experience__block-title"
+                                        >
+                                            IT компания OVERONE
+                                        </div>
+                                        <div
+                                            class="block-experience__block-small_data"
+                                        >
+                                            2023.05 - now
+                                        </div>
+                                    </div>
                                 </div>
-                                <div
-                                    class="item-block-about_page__icon"
-                                ></div>
-                                <div class="item-block-about_page__text">
-                                    Доброго времени суток,меня зовут Кулинич
-                                    Иван Я занимаюсь web-разработкой с
-                                    нуля,под ключ. Выполняю верстку и
-                                    программирование сайтов,а так же
-                                    доработку,добавляя полный функционал на
-                                    сайт!Верстаю адаптивную верстку с
-                                    помощью Bootstrap, таким образом сайт
-                                    получается красивым на любом
-                                    устройстве,будь то комьютер,ноутбук или
-                                    телефон!
-                                </div>
-                            </div>
-                            <div
-                            class="block-about_page__item item-block-about_page"
-                        >
-                            <div class="item-block-about_page__title">
-                                Самообразование
-                            </div>
-                            <div
-                                class="item-block-about_page__icon"
-                            ></div>
-                            <div class="item-block-about_page__text">
-                                Доброго времени суток,меня зовут Кулинич
-                                Иван Я занимаюсь web-разработкой с
-                                нуля,под ключ. Выполняю верстку и
-                                программирование сайтов,а так же
-                                доработку,добавляя полный функционал на
-                                сайт!Верстаю адаптивную верстку с
-                                помощью Bootstrap, таким образом сайт
-                                получается красивым на любом
-                                устройстве,будь то комьютер,ноутбук или
-                                телефон!
-                            </div>
-                        </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
-                </section>
-            </main>
+                </div>
+            </section>
             <footer class="footer"></footer>
         </div>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="script.js"></script>
         <!--Подключаем JavaScript в самом конце-->
     </body>
 </html>

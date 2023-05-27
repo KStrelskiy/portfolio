@@ -1,12 +1,12 @@
-.page__home {
+.home {
     font-family: Montserrat;
-}
-.home-page {
     position: relative;
     height: 100%;
+    margin-top: 70px;
+    padding: 100px 0;
     &::after {
         content: "";
-        background: linear-gradient(90deg, rgba(11,24,60,0.8687850140056023) 0%, rgba(21,55,97,1) 52%, rgba(19,76,102,1) 100%);
+        background-color: #f2f1ee;
         height: 100%;
         width: 100vw;
         position: absolute;
@@ -16,89 +16,36 @@
     &__container {
         position: relative;
         z-index: 2;
-        padding: 200px 0;
     }
-    &__block {
+    .body-home{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        column-gap: 50px;
-        flex-wrap: wrap;
-    }
-    &__logo {
-        height: 250px;
-        width: 250px;
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 4px 4px 15px 2px rgba(255, 255, 255, 0.2);
-        }
-    }
-    .body-home_page {
+        flex-direction: column;
         position: relative;
         overflow: hidden;
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            height: 25px;
-            width: 3px;
-            background-color: #071331;
-            animation-name: lineScale;
-            animation-direction: alternate;
-            animation-duration: 0.45s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-        }
-        @keyframes lineScale {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        row-gap: 15px;
+        &__subtitle {
+            font-size: 20px;
+            color: #93c;
+            font-weight: 500;
         }
         &__name {
-            margin-bottom: 10px;
-            span {
-                display: inline-block;
-                font-size: 60px;
-                font-weight: 800;
-                transition: color ease 0.2s;
-                cursor: default;
-                transition: all ease 0.3s;
-                &:nth-child(11) {
-                    margin-left: 20px;
-                }
-                &:hover {
-                    color: #071331;
-                    transform: scale(1.15);
-                }
-            }
+            font-size: 60px;
+            font-weight: 600;
         }
         &__profession {
             position: relative;
             text-align: right;
             font-size: 30px;
-            font-weight: 700;
-            animation: textTransformSpan 4s steps(30, end) infinite alternate;
+            font-weight: 500;
             span {
-                position: absolute;
-                bottom: 0;
-                right: -350px;
-                color: #071331;
+                color: #93c;
             }
         }
-        @keyframes textTransformSpan {
-            from {
-                right: 5px;
-            }
-            100% {
-                right: 370px;
-            }
+        &__text {
+            font-size: 20px;
+            max-width: 600px;
         }
     }
 }
