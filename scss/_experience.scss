@@ -1,5 +1,7 @@
 .experience {
-    padding: 100px 0;
+    padding: 150px 0 0 0;
+    &__container{
+    }
     &__title {
     }
     .block-experience {
@@ -13,21 +15,10 @@
             }
         }
         &__btn {
-            cursor: text;
-            position: relative;
             font-size: 20px;
             width: 150px;
             font-weight: 500;
             background-color: #fff;
-            &::before {
-                content: "";
-                width: 2px;
-                height: 100%;
-                background-color: rgb(153, 51, 204);
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
         }
         &__item-body {
             display: flex;
@@ -49,8 +40,11 @@
             margin-bottom: 5px;
         }
         &__block-small_data {
-            font-size: 14px;
+            font-size: 16px;
             margin-bottom: 5px;
+        }
+        &__block-text{
+            font-size: 18px;
         }
     }
 }

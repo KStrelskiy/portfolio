@@ -1,7 +1,6 @@
 .about {
-    font-family: Montserrat;
-    padding: 100px 0;
-    text-align: left;
+    padding: 150px 0 0 0;
+    margin-bottom: 15px;
     &__container {
     }
     &__title {
@@ -9,12 +8,12 @@
     .block-about {
         display: flex;
         align-items: center;
-        column-gap: 50px;
+        justify-content: center;
+        column-gap: 45px;
         &__body {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            row-gap: 15px;
             max-width: 650px;
         }
         &__box {
@@ -48,7 +47,7 @@
             }
         }
         &__text {
-            font-size: 16px;
+            font-size: 18px;
         }
         &__items {
             margin-top: 10px;
