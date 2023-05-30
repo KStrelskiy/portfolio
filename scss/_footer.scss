@@ -1,11 +1,28 @@
 .footer {
-    height: 100%;
-    width: 100vw;
-    background-color: #f2f1ee;
-}
-.footer__container {
-}
-.footer__copyright {
-}
-.footer__icons {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    svg {
+        width: 100%;
+        overflow: visible;
+        #wave1 {
+            animation-duration: 14s;
+            opacity: 0.3;
+        }
+        #wave2 {
+            animation-duration: 10s;
+            animation-direction: reverse;
+            opacity: 0.6;
+        }
+        .wave {
+            animation: wave 3s linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes wave {
+            100% {
+                transform: translate(-100%);
+            }
+        }
+    }
 }

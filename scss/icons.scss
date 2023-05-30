@@ -1,11 +1,11 @@
-//Скачиваем иконки .svg, далее заходим на сайт icomoon.io, закидываем туда иконки, удаляем все цвета (один обищй - чёрный)
+//Скачиваем иконки .svg, далее заходим на сайт icomoon.io, закидываем туда иконки, удаляем все цвета (один общий - чёрный)
 //Выделяем нужные иконки, Generate Font, меняем названия (это и будет название класаа). далее параметры
-//Font Name (нназвание шрифта) = icons; Class Prefix (префикса класса) = _icon- (_icon-название класса), download (скачиваем)
-//Нас надо папка fonts и style.css (который мы переименнуем в iconsfont.css)
+//Font Name (название шрифта) = icons; Class Prefix (префикса класса) = _icon- (_icon-название класса), download (скачиваем)
+//Нам надо папка fonts и style.css (который мы переименнуем в iconsfont.css)
 //Подключаем иконочный шрифт в <head> link href = "css/iconsfont.css"
 //@font-face в src меняем путь на актуальный
 //Добавляем ::before к [class^="_icon-"] => [class^="_icon-"]::before
-//Добавляем ::before к [class*="_icon-"] => [class^="_icon-"]::before
+//Добавляем ::before к [class*="_icon-"] => [class*="_icon-"]::before
 
 @font-face {
     font-family: "icons";

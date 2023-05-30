@@ -1,3 +1,112 @@
 .contact {
     padding: 150px 0 0 0;
+    &__container {
+    }
+    &__title {
+    }
+    .block-contact {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        font-size: 20px;
+        font-weight: 400;
+        .items_block-contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 25px;
+            &__item {
+                display: flex;
+                align-items: center;
+                a {
+                    cursor: pointer;
+                }
+            }
+            &__icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 30px;
+                background-color: rgb(153, 51, 204, 0.8);
+                padding: 10px;
+                border-radius: 50%;
+                font-size: 24px;
+                color: #fff;
+                transition: all ease 0.2s;
+                &:hover {
+                    background-color: rgb(153, 51, 204, 1);
+                    box-shadow: 0 0 20px 4px rgb(153, 51, 204, 0.4);
+                }
+            }
+            &__body {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                row-gap: 5px;
+            }
+            &__title {
+                font-weight: 500;
+            }
+            &__sub-title {
+                a {
+                    color: inherit;
+                    font-size: 16px;
+                }
+            }
+        }
+        .form-contact {
+            &__form {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                textarea {
+                    resize: none;
+                }
+                input,
+                textarea {
+                    font-size: 16px;
+                    border: 2px solid rgb(0, 0, 0, 0.2);
+                    border-radius: 5px;
+                    padding: 5px 0 5px 10px;
+                    transition: border linear 0.1s;
+                }
+                input:focus,
+                textarea:focus {
+                    border: 2px solid rgb(153, 51, 204, 0.5);
+                }
+            }
+            &__values {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                column-gap: 10px;
+            }
+            &__name {
+            }
+            &__email{
+            }
+            &__message {
+            }
+            &__btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: 500;
+                    padding: 10px 20px;
+                    background-color: rgb(153, 51, 204, 1);
+                    border-radius: 25px;
+                    transition: box-shadow ease 0.2s;
+                    &:hover {
+                        box-shadow: 0 0 20px 4px rgb(153, 51, 204, 0.4);
+                    }
+                }
+            }
+        }
+    }
 }
