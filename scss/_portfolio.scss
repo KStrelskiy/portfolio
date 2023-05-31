@@ -3,12 +3,22 @@
     &__container {
     }
     &__title {
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all ease 0.6s;
+    }
+    &__title._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
     }
     &__items-grid {
         display: grid;
-        grid-template-columns: repeat((auto-fit), minmax(150px, 33.33%));
-        grid-template-rows: repeat((auto-fit), minmax(150px, 250px));
+        grid-template-columns: repeat((auto-fit), minmax(300px, 33.33%));
+        justify-content: center;
         row-gap: 1.5rem;
+        transform: translate(0px, 40%);
+        opacity: 0;
+        transition: all ease 0.6s 0.2s;
         .item-portfolio {
             padding: 0.75rem;
             &__block {
@@ -71,5 +81,9 @@
                 }
             }
         }
+    }
+    &__items-grid._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
     }
 }

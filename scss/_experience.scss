@@ -1,8 +1,15 @@
 .experience {
     padding: 150px 0 0 0;
-    &__container{
+    &__container {
     }
     &__title {
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all ease 0.6s;
+    }
+    &__title._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
     }
     .block-experience {
         &__items {
@@ -19,6 +26,13 @@
             width: 150px;
             font-weight: 500;
             background-color: #fff;
+            transform: translate(-40%, 0px);
+            opacity: 0;
+            transition: all ease 0.6s 0.2s;
+        }
+        &__btn._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
         }
         &__item-body {
             display: flex;
@@ -26,6 +40,13 @@
             row-gap: 10px;
             margin-left: 50px;
             row-gap: 10px;
+            transform: translate(40%, 0px);
+            opacity: 0;
+            transition: all ease 0.6s  0.2s;
+        }
+        &__item-body._active {
+            transform: translate(0px, 0px);
+            opacity: 1;
         }
         &__block {
             display: flex;
@@ -43,7 +64,7 @@
             font-size: 16px;
             margin-bottom: 5px;
         }
-        &__block-text{
+        &__block-text {
             font-size: 18px;
         }
     }

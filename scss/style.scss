@@ -138,3 +138,38 @@ html {
         background-color: rgb(153, 51, 204, 0.6);
     }
 }
+
+body {
+    min-height: 250vh;
+}
+
+::-webkit-scrollbar-button {
+    width: 5px;
+    height: 0px;
+}
+
+/* Цвет дорожки, по которой двигается бегунок прокрутки. */
+::-webkit-scrollbar-track {
+    background-color: #ecedee;
+}
+
+/* Цвет бегунка полосы, а так же его закругление. */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgb(153, 51, 204, 0.7);
+}
+
+/* Цвет бегунка при наведении на него курсора. */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(153, 51, 204, 0.9);
+}
+
+/* Основная ширина полосы прокрутки. */
+::-webkit-resizer {
+    width: 7px;
+    height: 0px;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}

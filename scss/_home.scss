@@ -1,7 +1,7 @@
 .home {
     position: relative;
     height: 100%;
-    padding: 220px 0 150px 0;
+    padding: 300px 0 230px;
     &::after {
         content: "";
         background-color: #f2f1ee;
@@ -15,7 +15,7 @@
         position: relative;
         z-index: 2;
     }
-    .body-home{
+    .body-home {
         display: flex;
         align-items: flex-start;
         justify-content: center;
@@ -23,6 +23,9 @@
         position: relative;
         overflow: hidden;
         row-gap: 15px;
+        transform: translate(-10%, 0px);
+        opacity: 0;
+        transition: all ease 0.5s;
         &__subtitle {
             font-size: 20px;
             color: #93c;
@@ -45,5 +48,9 @@
             font-size: 20px;
             max-width: 600px;
         }
+    }
+    .body-home._active {
+        transform: translate(0px, 0px);
+        opacity: 1;
     }
 }

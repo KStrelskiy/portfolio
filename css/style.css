@@ -217,7 +217,7 @@ html {
 .home {
   position: relative;
   height: 100%;
-  padding: 220px 0 150px 0;
+  padding: 300px 0 230px;
 }
 .home::after {
   content: "";
@@ -240,6 +240,9 @@ html {
   position: relative;
   overflow: hidden;
   row-gap: 15px;
+  transform: translate(-10%, 0px);
+  opacity: 0;
+  transition: all ease 0.5s;
 }
 .home .body-home__subtitle {
   font-size: 20px;
@@ -263,10 +266,23 @@ html {
   font-size: 20px;
   max-width: 600px;
 }
+.home .body-home._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 .about {
   padding: 150px 0 0 0;
   margin-bottom: 15px;
+}
+.about__title {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all ease 0.6s 0.5s;
+}
+.about__title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .about .block-about {
   display: flex;
@@ -280,6 +296,13 @@ html {
   justify-content: center;
   flex-direction: column;
   max-width: 650px;
+  transform: translate(-40%, 0px);
+  opacity: 0;
+  transition: all ease 0.6s 0.9s;
+}
+.about .block-about__body._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .about .block-about__box {
   position: relative;
@@ -290,11 +313,9 @@ html {
   border-radius: 10px;
   background-color: rgb(153, 51, 204);
   transition: all ease-in-out 0.5s;
-}
-.about .block-about__box:hover {
-  position: relative;
-  top: -5px;
-  left: -5px;
+  transform: translate(40%, 0px);
+  opacity: 0;
+  transition: transform ease 0.6s 0.9s, opacity ease 0.6s 0.9s;
 }
 .about .block-about__box::before {
   position: absolute;
@@ -307,9 +328,9 @@ html {
   border: 2px solid rgb(153, 51, 204);
   transition: all ease-in-out 0.5s;
 }
-.about .block-about__box:hover::before {
-  top: 25px;
-  left: 25px;
+.about .block-about__box._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .about .block-about__text {
   font-size: 18px;
@@ -338,6 +359,15 @@ html {
 .experience {
   padding: 150px 0 0 0;
 }
+.experience__title {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+.experience__title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 .experience .block-experience__item {
   display: flex;
   align-items: flex-start;
@@ -350,6 +380,13 @@ html {
   width: 150px;
   font-weight: 500;
   background-color: #fff;
+  transform: translate(-40%, 0px);
+  opacity: 0;
+  transition: all ease 0.6s 0.2s;
+}
+.experience .block-experience__btn._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .experience .block-experience__item-body {
   display: flex;
@@ -357,6 +394,13 @@ html {
   row-gap: 10px;
   margin-left: 50px;
   row-gap: 10px;
+  transform: translate(40%, 0px);
+  opacity: 0;
+  transition: all ease 0.6s 0.2s;
+}
+.experience .block-experience__item-body._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .experience .block-experience__block {
   display: flex;
@@ -381,11 +425,23 @@ html {
 .portfolio {
   padding: 150px 0 0 0;
 }
+.portfolio__title {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+.portfolio__title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 .portfolio__items-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 33.33%));
-  grid-template-rows: repeat(auto-fit, minmax(150px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 33.33%));
+  justify-content: center;
   row-gap: 1.5rem;
+  transform: translate(0px, 40%);
+  opacity: 0;
+  transition: all ease 0.6s 0.2s;
 }
 .portfolio__items-grid .item-portfolio {
   padding: 0.75rem;
@@ -447,9 +503,22 @@ html {
 .portfolio__items-grid .item-portfolio__btn:hover {
   background-color: rgb(153, 51, 204);
 }
+.portfolio__items-grid._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 .contact {
   padding: 150px 0 0 0;
+}
+.contact__title {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+.contact__title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .contact .block-contact {
   display: flex;
@@ -466,6 +535,9 @@ html {
   flex-direction: column;
   justify-content: center;
   row-gap: 25px;
+  transform: translate(-40%, 0px);
+  opacity: 0;
+  transition: all ease 0.4s 0.2s;
 }
 .contact .block-contact .items_block-contact__item {
   display: flex;
@@ -503,6 +575,15 @@ html {
 .contact .block-contact .items_block-contact__sub-title a {
   color: inherit;
   font-size: 16px;
+}
+.contact .block-contact .items_block-contact._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.contact .block-contact .form-contact {
+  transform: translate(40%, 0px);
+  opacity: 0;
+  transition: all ease 0.4s 0.2s;
 }
 .contact .block-contact .form-contact__form {
   display: flex;
@@ -547,6 +628,10 @@ html {
 }
 .contact .block-contact .form-contact__btn button:hover {
   box-shadow: 0 0 20px 4px rgba(153, 51, 204, 0.4);
+}
+.contact .block-contact .form-contact._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .footer {
@@ -603,4 +688,39 @@ html {
   height: 1px;
   margin-right: 20px;
   background-color: rgba(153, 51, 204, 0.6);
+}
+
+body {
+  min-height: 250vh;
+}
+
+::-webkit-scrollbar-button {
+  width: 5px;
+  height: 0px;
+}
+
+/* Цвет дорожки, по которой двигается бегунок прокрутки. */
+::-webkit-scrollbar-track {
+  background-color: #ecedee;
+}
+
+/* Цвет бегунка полосы, а так же его закругление. */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(153, 51, 204, 0.7);
+}
+
+/* Цвет бегунка при наведении на него курсора. */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(153, 51, 204, 0.9);
+}
+
+/* Основная ширина полосы прокрутки. */
+::-webkit-resizer {
+  width: 7px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
 }
