@@ -33,3 +33,18 @@
 ._icon-tel:before {
     content: "\e902";
 }
+._icon-github:before {
+    content: "\e903";
+}
+._icon-linkedin:before {
+    content: "\e904";
+}
+._icon-instagram:before {
+    content: "\e905";
+}
+._icon-telegram:before {
+    content: "\e906";
+}
+._icon-vk:before {
+    content: "\e907";
+}

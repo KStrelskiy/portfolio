@@ -175,6 +175,57 @@ html {
   position: relative;
   z-index: 2;
 }
+.header__container .header-nav_left {
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all ease 0.6s 0.4s;
+}
+.header__container .header-nav_left__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+.header__container .header-nav_left__items::after {
+  content: "";
+  width: 2px;
+  height: 140px;
+  background-color: rgba(153, 51, 204, 0.8);
+}
+.header__container .header-nav_left__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: rgba(153, 51, 204, 0.8);
+}
+.header__container .header-nav_left__item:hover {
+  background-color: rgb(153, 51, 204);
+  box-shadow: 0 0 20px 4px rgba(153, 51, 204, 0.4);
+  border-radius: 50%;
+}
+.header__container .header-nav_left._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.header__nav {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+
+.header__nav._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 .nav__block {
   min-height: 70px;
@@ -240,9 +291,9 @@ html {
   position: relative;
   overflow: hidden;
   row-gap: 15px;
-  transform: translate(-10%, 0px);
+  transform: translate(-20%, 0px);
   opacity: 0;
-  transition: all ease 0.5s;
+  transition: all ease 0.6s 0.6s;
 }
 .home .body-home__subtitle {
   font-size: 20px;
@@ -278,7 +329,7 @@ html {
 .about__title {
   transform: translate(0px, 120%);
   opacity: 0;
-  transition: all ease 0.6s 0.5s;
+  transition: all ease 0.6s 1.2s;
 }
 .about__title._active {
   transform: translate(0px, 0px);
@@ -286,7 +337,7 @@ html {
 }
 .about .block-about {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   -moz-column-gap: 45px;
        column-gap: 45px;
@@ -296,9 +347,9 @@ html {
   justify-content: center;
   flex-direction: column;
   max-width: 650px;
-  transform: translate(-40%, 0px);
+  transform: translate(-120%, 0px);
   opacity: 0;
-  transition: all ease 0.6s 0.9s;
+  transition: all ease 0.6s 1.4s;
 }
 .about .block-about__body._active {
   transform: translate(0px, 0px);
@@ -312,10 +363,9 @@ html {
   height: 250px;
   border-radius: 10px;
   background-color: rgb(153, 51, 204);
-  transition: all ease-in-out 0.5s;
-  transform: translate(40%, 0px);
+  transform: translate(120%, 0px);
   opacity: 0;
-  transition: transform ease 0.6s 0.9s, opacity ease 0.6s 0.9s;
+  transition: transform ease 0.6s 1.4s, opacity ease 0.6s 1.4s;
 }
 .about .block-about__box::before {
   position: absolute;
@@ -326,7 +376,6 @@ html {
   height: 250px;
   border-radius: 10px;
   border: 2px solid rgb(153, 51, 204);
-  transition: all ease-in-out 0.5s;
 }
 .about .block-about__box._active {
   transform: translate(0px, 0px);

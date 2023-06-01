@@ -23,18 +23,20 @@ if (animItems.length > 0) {
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index]; // перебираем их
             const animItemHeight = animItem.offsetHeight; // высота блок анимируемого элемента
-            const animItemOffset = offset(animItem); // сумма высота в видимой части и сколько проскроллили
-            let animItemPoint = window.innerHeight - animItemHeight / 5; // точка анимирования элемента; window.innerHeight - видимая область всего окна пользователя
+            const animItemOffset = offset(animItem); // сумма высоты в видимой части и сколько проскроллили
+            let animItemPoint = window.innerHeight - animItemHeight / 4; // точка анимирования элемента; window.innerHeight - видимая область всего окна пользователя
             if (animItemHeight > window.innerHeight) {
-                animItemPoint = window.innerHeight - window.innerHeight / 5;
+                animItemPoint = window.innerHeight - window.innerHeight / 4;
             } // если высота блока элемента больше высоты области видимости экрана пользователя
             if (
                 pageYOffset > animItemOffset - animItemPoint &&
-                pageYOffset < animItemOffset + animItemPoint
+                pageYOffset < animItemOffset + animItemHeight
             ) {
                 animItem.classList.add("_active");
             } else {
-                animItem.classList.remove("_active");
+                if (!animItem.classList.contains("_no-repeatAnim")) {
+                    animItem.classList.remove("_active");
+                }
             } // момент, когда добавляется или удаляется класс
             // pageYOffset - количество пикселей, прокручиваемых по вертикальной оси (вниз и вверх)
         }
