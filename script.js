@@ -5,20 +5,21 @@ burger.addEventListener("click", (e) => {
     burger.classList.toggle("active-burger");
     sizePopup();
     nav.classList.toggle("popup");
-    if (nav.classList.contains('popup')) {
-        document.body.style.overflowY = 'hidden'
-        const item = document.querySelectorAll('.item__link')
-        item.forEach(item => {
-            item.addEventListener('click', () => {
-                if(item.getAttribute('href')) {
-                    document.body.style.overflowY = 'scroll' 
+    if (nav.classList.contains("popup")) {
+        document.body.style.overflowY = "hidden";
+        const item = document.querySelectorAll(".item__link");
+        item.forEach((item) => {
+            item.addEventListener("click", () => {
+                if (item.getAttribute("href")) {
+                    document.body.style.overflowY = "scroll";
                     nav.classList.remove("popup");
                     burger.classList.remove("active-burger");
                 }
-            })
-        })
+            });
+        });
     } else {
-        document.body.style.overflowY = 'scroll'
+        document.body.style.overflowY = "scroll";
+        nav.style.height = "";
     }
 });
 

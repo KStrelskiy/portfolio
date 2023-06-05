@@ -437,30 +437,37 @@ body {
 }
 @media (max-width: 767.98px) {
   .nav__items {
-    color: #000;
-    margin-left: 10px;
     position: absolute;
-    top: -50%;
+    top: -500%;
     right: -10px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
     align-items: center;
     opacity: 0;
-    transition: all ease-in-out 0.3s;
+    transition: all ease 0.1s;
   }
   .nav .nav__items.popup {
+    position: absolute;
     top: 0;
     right: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     opacity: 1;
+    color: #000;
+    transition: all ease 0.5s;
   }
 }
 .nav .item__link {
   color: inherit;
   font-size: 20px;
   font-weight: 500;
-  transition: all ease 0.3s;
+  transition: all ease 0.25s;
 }
 .nav .item__link:hover {
   color: #93c;
