@@ -31,9 +31,24 @@
             color: #93c;
             font-weight: 500;
         }
+        @media (max-width: ($md3 + px)) {
+            &__subtitle {
+                font-size: 18px;
+            }
+        }
         &__name {
             font-size: 60px;
             font-weight: 600;
+        }
+        @media (max-width: ($md2 + px)) {
+            &__name {
+                font-size: 45px;
+            }
+        }
+        @media (max-width: ($md3 + px)) {
+            &__name {
+                font-size: 36px;
+            }
         }
         &__profession {
             position: relative;
@@ -44,13 +59,48 @@
                 color: #93c;
             }
         }
+        @media (max-width: ($md2 + px)) {
+            &__profession {
+                font-size: 28px;
+            }
+        }
+        @media (max-width: ($md3 + px)) {
+            &__profession {
+                font-size: 24px;
+            }
+        }
         &__text {
             font-size: 20px;
             max-width: 600px;
         }
     }
+    @media (max-width: ($md2 + px)) {
+        .body-home {
+            row-gap: 10px;
+        }
+    }
+    @media (max-width: ($md3 + px)) {
+        .body-home {
+            row-gap: 5px;
+        }
+    }
     .body-home._active {
         transform: translate(0px, 0px);
         opacity: 1;
+    }
+}
+@media (max-width: ($md2 + px)) {
+    .home {
+        padding: 220px 0 170px;
+    }
+}
+@media (max-width: ($md3 + px)) {
+    .home {
+        padding: 190px 0 140px;
+    }
+}
+@media (max-width: ($md4 + px)) {
+    .home {
+        padding: 140px 0 90px;
     }
 }

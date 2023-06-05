@@ -1,5 +1,4 @@
 .experience {
-    padding: 150px 0 0 0;
     &__container {
     }
     &__title {
@@ -13,22 +12,37 @@
     }
     .block-experience {
         &__items {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
         }
         &__item {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
             &:first-child {
-                margin-bottom: 20px;
+                margin-bottom: 0;
             }
         }
         &__btn {
-            font-size: 20px;
-            width: 150px;
+            font-size: 28px;
             font-weight: 500;
-            background-color: #fff;
+            margin-bottom: 25px;
             transform: translate(-40%, 0px);
             opacity: 0;
             transition: all ease 0.6s 0.2s;
+        }
+        @media (max-width: ($md2 + px)) {
+            &__btn {
+                margin-bottom: 15px;
+            }
+        }
+        @media (max-width: ($md3 + px)) {
+            &__btn {
+                font-size: 18px;
+            }
         }
         &__btn._active {
             transform: translate(0px, 0px);
@@ -38,11 +52,26 @@
             display: flex;
             flex-direction: column;
             row-gap: 10px;
-            margin-left: 50px;
-            row-gap: 10px;
+            padding: 0 0 0 30px;
             transform: translate(40%, 0px);
             opacity: 0;
-            transition: all ease 0.6s  0.2s;
+            transition: all ease 0.6s 0.2s;
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                display: block;
+                width: 2px;
+                height: 100%;
+                margin-right: 20px;
+                background-color: rgba(153, 51, 204, 0.5);
+            }
+        }
+        @media (max-width: ($md2 + px)) {
+            &__item-body {
+                margin-left: 0;
+            }
         }
         &__item-body._active {
             transform: translate(0px, 0px);
@@ -55,10 +84,28 @@
             justify-content: center;
         }
         &__block-title {
-            font-size: 20px;
+            position: relative;
+            font-size: 22px;
             color: #000;
             font-weight: 500;
             margin-bottom: 5px;
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: -35px;
+                transform: translate(0px, -50%);
+                content: "";
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: rgba(153, 51, 204);
+            }
+        }
+        @media (max-width: ($md3 + px)) {
+            &__block-title {
+                font-size: 18px;
+            }
         }
         &__block-small_data {
             font-size: 16px;
@@ -66,6 +113,11 @@
         }
         &__block-text {
             font-size: 18px;
+        }
+        @media (max-width: ($md3 + px)) {
+            &__block-text {
+                font-size: 16px;
+            }
         }
     }
 }

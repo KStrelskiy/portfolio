@@ -1,3 +1,38 @@
+// Бургер-меню
+const burger = document.querySelector(".header__burger.burger");
+const nav = document.querySelector(".nav__items");
+burger.addEventListener("click", (e) => {
+    burger.classList.toggle("active-burger");
+    sizePopup();
+    nav.classList.toggle("popup");
+    if (nav.classList.contains('popup')) {
+        document.body.style.overflowY = 'hidden'
+        const item = document.querySelectorAll('.item__link')
+        item.forEach(item => {
+            item.addEventListener('click', () => {
+                if(item.getAttribute('href')) {
+                    document.body.style.overflowY = 'scroll' 
+                    nav.classList.remove("popup");
+                    burger.classList.remove("active-burger");
+                }
+            })
+        })
+    } else {
+        document.body.style.overflowY = 'scroll'
+    }
+});
+
+const header = document.querySelector(".header");
+window.addEventListener("resize", sizePopup);
+
+function sizePopup() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    nav.style.width = width + "px";
+    nav.style.height = height + "px";
+}
+// Бургер-меню
+
 // Анимация текса (печатная машинка)
 let app = document.querySelector(".body-home__profession");
 let typewriter = new Typewriter(app, {
