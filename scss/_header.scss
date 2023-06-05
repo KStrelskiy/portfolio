@@ -186,9 +186,9 @@
     @media (max-width: ($md3 + px)) {
         &__items {
             position: absolute;
-            top: -500%;
+            top: -1000%;
             right: -10px;
-            display: flex;
+            width: 100%;
             flex-direction: column;
             justify-content: center;
             row-gap: 20px;

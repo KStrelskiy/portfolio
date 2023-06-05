@@ -438,9 +438,9 @@ body {
 @media (max-width: 767.98px) {
   .nav__items {
     position: absolute;
-    top: -500%;
+    top: -1000%;
     right: -10px;
-    display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;

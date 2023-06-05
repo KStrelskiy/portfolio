@@ -20,6 +20,7 @@ burger.addEventListener("click", (e) => {
     } else {
         document.body.style.overflowY = "scroll";
         nav.style.height = "";
+        nav.style.width = "";
     }
 });
 
