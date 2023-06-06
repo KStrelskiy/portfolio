@@ -1,6 +1,8 @@
 // Бургер-меню
 const burger = document.querySelector(".header__burger.burger");
 const nav = document.querySelector(".nav__items");
+const navLeftItems = document.querySelector(".header-nav_left__items");
+const navLeft = document.querySelector(".header__nav-left");
 burger.addEventListener("click", (e) => {
     burger.classList.toggle("active-burger");
     sizePopup();
@@ -21,17 +23,25 @@ burger.addEventListener("click", (e) => {
         document.body.style.overflowY = "scroll";
         nav.style.height = "";
         nav.style.width = "";
+        navLeft.append(navLeftItems);
     }
 });
 
-const header = document.querySelector(".header");
 window.addEventListener("resize", sizePopup);
 
 function sizePopup() {
     width = window.innerWidth;
     height = window.innerHeight;
-    nav.style.width = width + "px";
-    nav.style.height = height + "px";
+    if (width <= 767.98) {
+        nav.style.width = width + "px";
+        nav.style.height = height + "px";
+        nav.append(navLeftItems);
+    } else {
+        nav.style.width = "";
+        nav.style.height = "";
+        navLeft.append(navLeftItems);
+        document.body.style.overflowY = "scroll";
+    }
 }
 // Бургер-меню
 
@@ -61,9 +71,9 @@ if (animItems.length > 0) {
             const animItem = animItems[index]; // перебираем их
             const animItemHeight = animItem.offsetHeight; // высота блок анимируемого элемента
             const animItemOffset = offset(animItem); // сумма высоты в видимой части и сколько проскроллили
-            let animItemPoint = window.innerHeight - animItemHeight / 4; // точка анимирования элемента; window.innerHeight - видимая область всего окна пользователя
+            let animItemPoint = window.innerHeight - animItemHeight / 5; // точка анимирования элемента; window.innerHeight - видимая область всего окна пользователя
             if (animItemHeight > window.innerHeight) {
-                animItemPoint = window.innerHeight - window.innerHeight / 4;
+                animItemPoint = window.innerHeight - window.innerHeight / 5;
             } // если высота блока элемента больше высоты области видимости экрана пользователя
             if (
                 pageYOffset > animItemOffset - animItemPoint &&

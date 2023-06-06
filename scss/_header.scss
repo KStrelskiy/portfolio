@@ -24,11 +24,13 @@
         z-index: 3;
         top: 50%;
         right: 20px;
-        transform: translateY(-50%);
+        transform: translateY(-50%) rotate(360deg);
         justify-content: center;
         align-items: center;
         flex-direction: column;
         row-gap: 6px;
+        opacity: 0;
+        transition: all ease 0.6s;
         &__line {
             position: relative;
             transition: all ease 0.35s;
@@ -40,6 +42,11 @@
                 background-color: black;
             }
         }
+    }
+    .burger._active {
+        opacity: 1;
+        right: 20px;
+        transform: translateY(-50%) rotate(0);
     }
     .burger.active-burger .burger__line::after {
         background: rgba(153, 51, 204);
@@ -235,6 +242,10 @@
             opacity: 1;
             color: #000;
             transition: all ease 0.5s;
+        }
+        .nav__items.popup .header-nav_left__items {
+            position: absolute;
+            bottom: 30px;
         }
     }
     &__item {
