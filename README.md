@@ -1,2 +1,2 @@
 # portfolio
-https://github.com/KStrelskiy/portfolio.git
+https://kstrelskiy.github.io/portfolio/
